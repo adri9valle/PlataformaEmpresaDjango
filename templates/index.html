@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% load staticfiles %}
+	<title>Bienvenido a Platarforma Empresa</title>
+	<link rel="stylesheet" type="text/css" href="/static/bs/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/bs/css/signin.css">
+</head>
+<body>
+
+<div class="container"> 
+	<form id="loginform" class="form-signin" action="." method="POST">{% csrf_token %}
+		<h2 class="form-signin-heading">Plataforma Empresa</h2>
+		<h3 class="form-signin-heading">{{ fecha }}</h3><br>
+		<table>
+			{{ formulario.as_table }}
+		</table>	
+		<p><input type="submit" class="btn btn-lg btn-primary btn-block" value="Login"></p>
+		<div class="mensajeerror">{{ mensaje }}</div>
+	</form>
+</div>
+
+
+</body>
+</html>

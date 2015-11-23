@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% load staticfiles %}
+	<title>{% block title %}{% endblock %}</title>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	     alert("Documento cargado");
+	});
+	</script>-->
+	<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+</head>
+</head>
+<body>
+		<h2>{% block h2 %}{% endblock %}</h2>
+		<h3>{% block h3 %}{% endblock %}</h3>
+		<br>
+	    <form action="." method="POST">{% csrf_token %}
+	        <table>
+	            {{ formulario.as_table }}
+	        </table>
+	        <p><input type="submit" value="Login"></p>
+	    </form>
+</body>
+</html>
+

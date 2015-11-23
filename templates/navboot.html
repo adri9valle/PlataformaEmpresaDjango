@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+	<title>NavBootstrap</title>
+	<link rel="stylesheet" href="../static/bs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/bs/css/sigin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../static/bs/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="navbar-brand">Plataforma Empresa</div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+		<li><a href="#"><span class="glyphicon glyphicon-home"></span> {{empleado}}</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Empleados<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-list"></span> Empleados</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-list"></span> Departamentos</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-list"></span> Puestos</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-hdd"></span> Materiales</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> Incidencias</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+</body>
+</html>

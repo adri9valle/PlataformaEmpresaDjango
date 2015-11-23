@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% load staticfiles %}
+	<title>Bienvenido a Platarforma Empresa</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/bs/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/bs/css/signin.css">
+	
+</head>
+<body>
+	<form id="loginform" class="form-signin" action="." method="POST">{% csrf_token %}
+		<h2 class="form-signin-heading">Plataforma Empresa</h2>
+		<h3 class="form-signin-heading">{{ fecha }}</h3><br>
+		<span class="glyphicon glyphicon-user"></span><input type="text" id="id_user" name="user" class="user">
+		<br>
+		<span class="glyphicon glyphicon-lock"></span><input type="password" id="id_passwd" name="passwd" class="passwd">
+		<br><br>
+		<p><input type="submit" class="btn btn-lg btn-primary btn-block" value="Login"></p>
+	</form>
+</div>
+
+<script>
+$('#loginform').submit(function () {
+    user = ($('#id_user').val());
+	passwd = ($('#id_passwd').val());
+
+    if (user  == '') {
+        
+        $( ".user" ).addClass( "error" );
+        $(".error").fadeOut();
+        return false;
+    }
+    if (passwd == '') {
+        alert('p-field is empty.');
+        return false;
+    }
+});
+</script>
+
+</body>
+</html>
+

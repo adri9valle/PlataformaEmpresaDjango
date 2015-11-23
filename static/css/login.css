@@ -1,0 +1,36 @@
+body{
+	text-align: center;
+	background-color: #99FF99;
+}
+
+table{
+	margin: auto;
+	font-size: 1em;
+	color: #036;
+	font-weight: normal;
+}
+
+table, th {
+	border: 1px solid black;
+	background-color: #FFFF99;
+}
+table,  td {
+    border: 1px solid black;
+	background-color: #99FF99; 	
+} 
+
+h2 {
+	font-size: 2em;
+	color: #036;
+	margin: 0;
+	padding-top: 1em;
+	font-weight: normal;
+}
+
+h3{
+	font-size: 1em;
+	color: #036;
+	margin: 0;
+	padding-top: 1em;
+	font-weight: normal;
+}
